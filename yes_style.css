@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+    font-family: "Nunito", sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.header_text {
+    font-size: 3em;
+    color: #d32f2f;
+}
+
+.gif_container img {
+    width: 300px; 
+    max-width: 500px; 
+    height: auto; 
+}
+.electric-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  padding: 40px;
+}
+
+/* Card */
+.electric-card {
+  position: relative;
+  border-radius: 16px;
+  padding: 6px;
+  background: linear-gradient(
+    120deg,
+    #ff2fdc,
+    #ff7ae6,
+    #ff2fdc
+  );
+  background-size: 300% 300%;
+  animation: electricFlow 4s linear infinite;
+  box-shadow: 0 0 20px rgba(255, 47, 220, 0.6);
+}
+
+/* Inner photo */
+.electric-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  background: #000;
+}
+
+/* Glow hover */
+.electric-card:hover {
+  box-shadow:
+    0 0 30px rgba(255, 47, 220, 0.9),
+    0 0 60px rgba(255, 47, 220, 0.7);
+  transform: translateY(-6px) scale(1.03);
+  transition: all 0.3s ease;
+}
+
+/* Electric animation */
+@keyframes electricFlow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .electric-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .electric-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.electric-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  padding: 40px;
+}
+
+/* Card */
+.electric-card {
+  position: relative;
+  border-radius: 16px;
+  padding: 6px;
+  background: linear-gradient(
+    120deg,
+    #ff2fdc,
+    #ff7ae6,
+    #ff2fdc
+  );
+  background-size: 300% 300%;
+  animation: electricFlow 4s linear infinite;
+  box-shadow: 0 0 20px rgba(255, 47, 220, 0.6);
+}
+
+/* Inner photo */
+.electric-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  background: #000;
+}
+
+/* Glow hover */
+.electric-card:hover {
+  box-shadow:
+    0 0 30px rgba(255, 47, 220, 0.9),
+    0 0 60px rgba(255, 47, 220, 0.7);
+  transform: translateY(-6px) scale(1.03);
+  transition: all 0.3s ease;
+}
+
+/* Electric animation */
+@keyframes electricFlow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .electric-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .electric-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.bucin-box {
+  max-width: 700px;
+  padding: 40px;
+
+.title {
+  font-size: 32px;
+  color: #ff4fbf;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  color: #ff2fa8;
+  font-weight: 600;
+}
+
+.play-btn {
+  background: linear-gradient(135deg, #ff4fbf, #ff89d6);
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(255,79,191,0.6);
+  transition: all 0.3s ease;
+}
+
+.play-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px rgba(255,79,191,0.9);
+}
+
+.love {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #888;
+}
+
+/* floating hearts */
+.heart {
+  position: center;
+  bottom: -20px;
+  color: #ff5fcf;
+  font-size: 20px;
+  animation: floatUp 6s linear infinite;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-120vh); opacity: 0; }
+}
+}

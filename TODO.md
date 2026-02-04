@@ -1,0 +1,1 @@
+- [x] Add text-align: center to .bucin-box in yes_style.css to center the text below the cards in yes_page.html
